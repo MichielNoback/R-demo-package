@@ -14,7 +14,7 @@
 #' @export
 plot_growth_curves <- function(growth_data, add_smoother=FALSE) {
     plt <- ggplot2::ggplot(data = growth_data,
-                           mapping = aes(x = minutes,
+                           mapping = ggplot2::aes(x = minutes,
                                          y = OD600,
                                          linetype = duplo,
                                          shape = duplo,
