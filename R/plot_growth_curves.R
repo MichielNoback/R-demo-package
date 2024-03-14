@@ -15,10 +15,10 @@
 plot_growth_curves <- function(growth_data, add_smoother=FALSE) {
     plt <- ggplot2::ggplot(data = growth_data,
                            mapping = ggplot2::aes(x = minutes,
-                                         y = OD600,
-                                         linetype = duplo,
-                                         shape = duplo,
-                                         color = condition)) +
+                                                  y = OD600,
+                                                  linetype = duplo,
+                                                  shape = duplo,
+                                                  color = condition)) +
            ggplot2::geom_point() +
            ggplot2::theme_minimal()
     if (add_smoother) {
