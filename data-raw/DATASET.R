@@ -24,4 +24,3 @@ create_demo_data <- function() {
 
 create_demo_data()
 
-
